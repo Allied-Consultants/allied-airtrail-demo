@@ -24,7 +24,7 @@ func main() {
 		postgresUser,
 		postgresDBName,
 		postgresPassword,
-		postgresSSLMode := LoadEnvironmentVariables("bulk.env")
+		postgresSSLMode := LoadEnvironmentVariables(".env")
 
 	connectionString := fmt.Sprintf("host=%s port=%s user=%s dbname=%s password=%s sslmode=%s",
 		postgresHost,
